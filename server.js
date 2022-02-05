@@ -12,7 +12,6 @@ var port = process.env.PORT || 8080;
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.json());
 
-
 //serve comments data to the requestor
 app.get('/api/users',(req,res)=>{
     console.log('users requested')
