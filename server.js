@@ -40,8 +40,6 @@ io.on('connection', (socket)=>{
     },1000);
 });
 
-
-
 //Data base Connection
 const uri = "mongodb+srv://priyanka:Priy%402127@cluster0.2dgu3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {useNewUrlParser: true, useUnifiedTopology: true});
