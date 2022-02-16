@@ -1,0 +1,102 @@
+
+  /* style the container */
+  .container {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px 0 40px 0;
+  }
+
+/* Two-column layout */
+  .col {
+    float: centre;
+    width: 60%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* top container */
+  .top-container {
+    position: relative;
+    text-align: center;
+    background-color: rgba(66, 250, 33, 0.664);
+    border-radius: 5px;
+    padding: 10px 0 20px 0;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  * {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	background-color: #455a64;
+}
+
+h1 {
+	color: white;
+	font-size: 3em;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
+
+button {
+	display: block;
+	border-radius: 100%; 
+	border: none;
+	outline: none;
+	margin: 32px;
+	padding: 32px;
+	background-color: #03a9f4;
+	box-shadow: 3px 3px 7px #333;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+svg {
+	fill: white;
+	width: 64px;
+	height: 64px;
+}
+
+section {
+	display: inline-block;
+}
+
+.remote-buttons {
+	position: relative;
+}
+
+.tv-sign {
+	background-color: #ff1538;
+}
+
+.bulb-sign {
+	background-color: #15f7ff;
+}
+
+.ac-sign {
+	background-color: #ff9a15;
+}
+
+.add-sign {
+	background-color: #2ca0ee;
+}
