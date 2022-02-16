@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 let envf = require("./public/env");
-=======
-
->>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
 let express = require("express");
 let app = express();
 
@@ -16,10 +12,7 @@ var port = process.env.PORT || 8080;
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.json());
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
 //serve comments data to the requestor
 app.get('/api/users',(req,res)=>{
     console.log('users requested')
@@ -48,11 +41,8 @@ io.on('connection', (socket)=>{
     },1000);
 });
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
 //Data base Connection
 const uri = "mongodb+srv://priyanka:Priy%402127@cluster0.2dgu3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {useNewUrlParser: true, useUnifiedTopology: true});
@@ -86,7 +76,6 @@ const insertUser = (user,res)=>{
 const getUsers=(res)=>{
   usersCollection.find({}).toArray(function(err,result){
         if(err) throw err;
-<<<<<<< HEAD
         console.log(result)
         res.send(result)
         checkUser(envf.user,result)
@@ -110,13 +99,6 @@ const checkUser=(user,result)=>{
 
 }
 
-=======
-        console.log(res)
-        res.send(result)
-    })
-}
-
->>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
 openConnection()
 
 http.listen(port,()=>{
