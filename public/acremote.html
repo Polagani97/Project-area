@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+
+  <title> SMART HOME</title>
+  <meta name="description" content="Group Project">
+  <meta name="author" content="Smart Home">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="acremote.css">
+</head>
+
+<body>
+    <div class="acremote">
+        <h1>AC Remote</h1>
+        <div class="remote-buttons">
+            <section>
+                <button id="power" class="power">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22.1 22.1" style="enable-background:new 0 0 22.1 22.1;" xml:space="preserve">
+                        <path d="M11.1,22.1C11.1,22.1,11.1,22.1,11.1,22.1c-2.7,0-5.2-1-7.1-2.9C0.1,15.2,0.1,8.9,4,5c0.4-0.4,1-0.4,1.4,0
+        c0.4,0.4,0.4,1,0,1.4c-3.1,3.1-3.1,8.2,0,11.3c1.5,1.5,3.5,2.3,5.7,2.3c0,0,0,0,0,0c2.1,0,4.1-0.8,5.7-2.3c3.1-3.1,3.1-8.2,0-11.3
+        c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0c3.9,3.9,3.9,10.2,0,14.1C16.2,21,13.7,22.1,11.1,22.1z" />
+                        <path d="M11.1,12.1c-0.6,0-1-0.4-1-1v-10c0-0.6,0.4-1,1-1s1,0.4,1,1v10C12.1,11.6,11.6,12.1,11.1,12.1z" />
+                    </svg>
+                </button>
+
+                <button id="wind-direction">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M87 594 c-4 -4 -7 -121 -7 -260 0 -247 0 -252 -21 -257 -12 -3 -19 -12 -17 -19 7 -19 189 -19 196 0 2 7 -5 16 -17 19 -20 5 -21 11 -21 159 l0 153 30 -10 c24 -9 30 -17 30 -39 0 -37 9 -42 59 -34 l41 7 0 127 0 127 -41 7
+                            c-50 8 -59 3 -59 -33 0 -25 -32 -61 -54 -61 -3 0 -6 26 -8 58 l-3 57 -50 3 c-28 2 -54 0 -58 -4z m173 -159 c0 -19 -4 -23 -17 -18 -32 11 -34 15 -16 29 26 19 33 17 33 -11z"/>
+                            <path d="M400 440 c0 -107 2 -121 16 -116 9 3 22 6 30 6 11 0 14 22 14 110 0 88 -3 110 -14 110 -8 0 -21 3 -30 6 -14 5 -16 -9 -16 -116z"/>
+                            <path d="M500 440 l0 -98 42 9 c23 6 45 12 50 15 4 3 8 36 8 74 0 38 -4 71 -8 74 -5 3 -27 9 -50 15 l-42 9 0 -98z"/>
+                        </g>
+                    </svg>
+                </button>
+            </section>
+
+            <section class="temp-section">
+                <button id="temp-up"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+    
+                        <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M196 516 l-116 -124 0 -105 c0 -58 4 -108 9 -111 4 -3 34 21 64 53
+    l56 59 3 -142 3 -141 105 0 105 0 3 141 3 142 56 -59 c30 -32 60 -56 64 -53 5
+    3 9 53 9 111 l0 105 -116 124 c-65 68 -120 124 -124 124 -4 0 -59 -56 -124
+    -124z" />
+                        </g>
+                    </svg>
+                </button>
+
+                <button id="temp-down"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+    
+                        <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M217 634 c-4 -4 -7 -69 -7 -145 l0 -138 -56 60 c-31 32 -61 56 -65
+    53 -5 -3 -9 -53 -9 -112 l1 -107 119 -125 120 -125 120 125 119 125 1 107 c0
+    59 -4 109 -9 112 -4 3 -34 -21 -64 -53 l-56 -59 -3 142 -3 141 -101 3 c-55 1
+    -103 0 -107 -4z" />
+                        </g>
+                    </svg>
+                </button>
+            </section>
+
+            <section class="options-section">
+                <button id="fan-onoff">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M136 549 c-105 -83 -51 -239 83 -239 40 0 40 0 29 -26 -13 -27 -23 -28 -101 -8 -65 16 -103 -80 -56 -140 83 -105 239 -51 239 83 0 40 0 40 26 29
+    27 -13 28 -23 8 -101 -16 -65 80 -103 140 -56 105 83 51 239 -83 239 -40 0 -40 0 -29 26 13 27 23 28 101 8 65 -16 103 80 56 140 -83 105 -239 51 -239
+    -83 0 -40 0 -40 -26 -29 -27 13 -28 23 -8 101 16 65 -80 103 -140 56z m204 -215 c11 -12 10 -18 -3 -32 -16 -15 -18 -15 -34 0 -13 14 -14 20 -3 32 7 9 16
+    16 20 16 4 0 13 -7 20 -16z"/>
+                        </g>
+                    </svg>                    
+                </button>
+
+                <button id="timer">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="64.000000pt" height="64.000000pt" viewBox="0 0 64.000000 64.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path d="M280 610 c0 -5 18 -10 40 -10 22 0 40 5 40 10 0 6 -18 10 -40 10 -22 0 -40 -4 -40 -10z"/>
+                            <path d="M310 570 c0 -11 5 -20 10 -20 6 0 10 9 10 20 0 11 -4 20 -10 20 -5 0 -10 -9 -10 -20z"/>
+                            <path d="M450 571 c0 -11 69 -55 76 -48 3 3 -7 14 -23 24 -44 31 -53 35 -53 24z"/>
+                            <path d="M220 519 c-55 -25 -105 -71 -133 -124 -29 -53 -30 -173 -3 -225 26 -49 74 -98 121 -123 56 -30 174 -30 230 0 47 25 95 74 121 123 27 52 26 172 -3 225 -66 123 -214 178 -333 124z m110 -24 c0 -8 8 -15 18 -15 10 0 40 -11
+                            67 -25 27 -13 53 -21 58 -18 6 3 7 2 4 -4 -3 -5 5 -31 18 -58 14 -27 25 -57 25 -67 0 -10 7 -18 18 -18 16 -1 16 -1 0 -14 -10 -7 -18 -20 -18 -28 0 -8 -11 -36 -25 -63 -13 -27 -21 -53 -18 -58 3 -6 2 -7 -4 -4 -5 3 -31 -5 -58 -18 -27
+                            -14 -55 -25 -63 -25 -8 0 -21 -8 -28 -18 -13 -16 -13 -16 -14 1 0 10 -8 17 -18 17 -10 0 -40 11 -67 25 -27 13 -53 21 -58 18 -6 -3 -7 -2 -4 4 3 5 -5 31 -18 58 -14 27 -25 55 -25 63 0 8 -8 21 -17 28 -17 13 -17 13 0 14 10 0 17 8
+                            17 18 0 10 11 40 25 67 13 27 21 53 18 58 -3 6 -1 7 4 4 6 -4 31 4 55 18 23 14 53 25 66 25 13 0 22 6 22 15 0 8 5 15 10 15 6 0 10 -7 10 -15z"/>
+                            <path d="M245 451 c-154 -71 -150 -280 7 -346 47 -19 89 -19 136 0 160 67 160 283 0 350 -49 20 -94 19 -143 -4z m-23 -47 c-29 -24 -46 -50 -56 -82 -9 -29 -15 -38 -15 -24 -1 36 24 86 58 115 18 15 37 27 44 27 6 0 -8 -16 -31 -36z
+                            m165 -67 c-20 -18 -37 -39 -37 -48 0 -9 -7 -22 -16 -29 -12 -11 -18 -11 -30 2 -20 19 -8 48 20 48 12 0 37 16 56 35 18 19 36 32 39 29 3 -3 -11 -20 -32 -37z"/>
+                            <path d="M305 291 c-7 -12 12 -24 25 -16 11 7 4 25 -10 25 -5 0 -11 -4 -15 -9z"/>
+                            <path d="M460 520 c0 -5 5 -10 10 -10 6 0 10 5 10 10 0 6 -4 10 -10 10 -5 0 -10 -4 -10 -10z"/>
+                        </g>
+                    </svg>
+                </button>
+            </section>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <h4><a href="userhome.html">Back to Home</a></h4>
+            <h4>Get in <a href="mailto:priyankapolagani12@gmail.com?Subject=Hello!" target="_top">Contact</a> with me!</h4>
+        </p>
+        <p>&copy; Priyanka</p>
+    </footer>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+</html>
