@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 var username
 var password
 var user
+=======
+>>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
 // send data to server
 const submitUser=(user)=>{
     $.ajax({
@@ -14,6 +17,32 @@ const submitUser=(user)=>{
     });
 }
 
+<<<<<<< HEAD
+=======
+// get data from the server
+const checkUser=(user)=>{
+    $.ajax({
+        url: '/api/users',
+        contentType: 'application/json',
+        type: 'GET',
+        success: function(result) {
+            alert('User data',user.username)
+            console.log(result)
+        }
+    });
+}
+
+const formUser=()=>{
+    let username = $('#username').val()
+    let password = $('#password').val()
+
+    let user={username,password}
+
+    console.log(user)
+    checkUser(user)
+}
+
+>>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
 const newUser=()=>{
     let username = $('#username').val()
     let password = $('#password').val()
@@ -25,6 +54,7 @@ const newUser=()=>{
 
     console.log(user)
     submitUser(user)
+<<<<<<< HEAD
 }
 
 const formUser=()=>{
@@ -83,3 +113,6 @@ socket.on('number',(msg) => {
 
   })
 */
+=======
+}
+>>>>>>> 12c86d77f0bfac0f7672af1d82597982512afbdf
