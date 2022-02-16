@@ -29,7 +29,13 @@
                 <div class="col">
                     <input type="text" id="username" name="username" placeholder="Username" required>
                     <input type="password" id="password" name="password" placeholder="Password" required>
-                    <input type="submit" value="Login">
+                    <div class="bottom-container">
+                        <div class="row">
+                            <div class="col">
+                                <a onclick="formUser()" href="userhome.html" style="color:white" class="btn">Sign in</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>
@@ -47,11 +53,12 @@
         <p>
             <h4>Get in <a href="mailto:priyankapolagani12@gmail.com?Subject=Hello!" target="_top">Contact</a> with me!</h4>
         </p>
-        <p>&copy; Smart Home</p>
+        <p>&copy; Priyanka</p>
     </footer>
     
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="env.js"></script>
     <!-- socket IO Served by the server -->
     <script src="/socket.io/socket.io.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
