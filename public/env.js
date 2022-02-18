@@ -1,3 +1,7 @@
+var username
+var password
+var user
+
 // send data to server
 const submitUser=(user)=>{
     $.ajax({
@@ -11,29 +15,7 @@ const submitUser=(user)=>{
     });
 }
 
-// get data from the server
-const checkUser=(user)=>{
-    $.ajax({
-        url: '/api/users',
-        contentType: 'application/json',
-        type: 'GET',
-        success: function(result) {
-            alert('User data',user.username)
-            console.log(result)
-        }
-    });
-}
-
-const formUser=()=>{
-    let username = $('#username').val()
-    let password = $('#password').val()
-
-    let user={username,password}
-
-    console.log(user)
-    checkUser(user)
-}
-
+// Create a new user
 const newUser=()=>{
     let username = $('#username').val()
     let password = $('#password').val()
@@ -46,3 +28,14 @@ const newUser=()=>{
     console.log(user)
     submitUser(user)
 }
+
+// form user from login details to verify the user
+const formUser=()=>{
+    username = $('#username').val()
+    password = $('#password').val()
+
+    user={username,password}
+
+    console.log(user)
+}
+

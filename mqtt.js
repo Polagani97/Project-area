@@ -2,7 +2,6 @@ const log = require('yalm');
 const Mqtt = require('mqtt');
 const Lgtv = require('lgtv2');
 const config = require('./config.js');
-const pkg = require('./package.json');
 
 let mqttConnected;
 let tvConnected;
@@ -10,13 +9,13 @@ let lastError;
 
 log.setLevel(config.verbosity);
 
-log.info(pkg.name + ' ' + pkg.version + ' starting');
 log.info('mqtt trying to connect', config.url);
 
 const mqtt = Mqtt.connect(config.url, {will: {topic: config.name + '/connected', payload: '0', retain: true}});
 
+
 const lgtv = new Lgtv({
-    url: 'ws://' + config.tv + ':3000'
+    url: 'ws://' + config.tv + ':3030'
 });
 
 mqtt.on('connect', () => {

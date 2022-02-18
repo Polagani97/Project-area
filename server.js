@@ -12,13 +12,9 @@ var port = process.env.PORT || 8080;
 app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.json());
 
-
-//serve comments data to the requestor
 app.get('/api/users',(req,res)=>{
     console.log('users requested')
-    //get comments from database
-    //return comments to the user
-    //res.send(dummyData)
+    //get users from database
     getUsers(res)
 })
 
@@ -26,8 +22,6 @@ app.post('/api/users',(req,res)=>{
     console.log('New User Added')
     console.log('body',req.body)
     let user = req.body;
-    //dummyData.push(comment)
-    //res.send({result:200})
     insertUser(user,res)
 })
 
@@ -63,7 +57,7 @@ const openConnection = (message)=> {
     });
 }
 
-//insert comment into the db
+//insert user into the db
 const insertUser = (user,res)=>{
     //insert into collection
     usersCollection.insertOne(user,(err,result)=>{
@@ -72,7 +66,7 @@ const insertUser = (user,res)=>{
     })
 }
 
-//retrieve all comments
+//retrieve all users
 const getUsers=(res)=>{
   usersCollection.find({}).toArray(function(err,result){
         if(err) throw err;

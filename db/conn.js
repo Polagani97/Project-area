@@ -1,3 +1,4 @@
+// To establish db connection
 const { MongoClient } = require('mongodb');
 
 const uri = "mongodb+srv://priyanka:Priy%402127@cluster0.2dgu3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";

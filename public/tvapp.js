@@ -1,33 +1,41 @@
-const powerButton = document.getElementById('power');
-const sourceButton = document.getElementById('source');
-const volUpButton = document.getElementById('vol-up');
-const volDownButton = document.getElementById('vol-down');
-
-const sendCommand = command => {
-	fetch('mqtt://127.0.0.1', {method: 'post', body: command});
+// set topic, payload and log for the power function
+const powerAction=()=>{
+    console.log("Power switch clicked");
+    topic="set/power";
+    payload="1";
 }
 
-const power = () => {
-	console.log('power');
-	sendCommand('power');
-};
+// set topic, payload and log for the source function
+const toSource=()=>{
+    console.log("Home Screen switch clicked");
+    topic="set/launch";
+    payload="1";
+}
 
-const source = () => {
-	console.log('source');
-	sendCommand('source');
-};
+// set topic, payload and log for the volume up function
+const volumeUp=()=>{
+    console.log("Volume Up switch clicked");
+    topic="set/volume";
+    payload="1";
+}
 
-const volUp = () => {
-	console.log('volUp');
-	sendCommand('volUp');
-};
+// set topic, payload and log for the volume down function
+const volumeDown=()=>{
+    console.log("Volume Down switch clicked");
+    topic="set/volume";
+    payload="-1";
+}
 
-const volDown = () => {
-	console.log('volDown');
-	sendCommand('volDown');
-};
+// set topic, payload and log for the youtube function
+const youTube=()=>{
+    console.log("Youtube switch clicked");
+    topic="set/youtube";
+    payload="1";
+}
 
-powerButton.addEventListener('click', power);
-sourceButton.addEventListener('click', source);
-volUpButton.addEventListener('click', volUp);
-volDownButton.addEventListener('click', volDown);
+// set topic, payload and log for the mute function
+const mute=()=>{
+    console.log("Mute switch clicked");
+    topic="set/mute";
+    payload="1";
+}
